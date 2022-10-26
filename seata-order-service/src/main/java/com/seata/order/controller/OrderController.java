@@ -16,7 +16,6 @@ public class OrderController {
     @GetMapping("/create")
     public CommonResult create(Order order) {
         orderService.create(order);
-
         return new CommonResult("订单创建成功!", 200);
     }
 }
